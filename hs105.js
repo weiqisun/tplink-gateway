@@ -29,7 +29,6 @@ server.listen(PORT);
 logger.info("The HS-105 controller has started");
 
 function onRequest(request, response){
-  //var pathname = url.parse(request.url).pathname;
   var command = request.headers["x-hs100-command"];
   var deviceIP = request.headers["x-hs100-ip"];
   var hs100 = new hs100api.Client().getPlug({host:deviceIP});

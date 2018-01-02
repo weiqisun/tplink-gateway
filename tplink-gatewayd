@@ -1,9 +1,9 @@
 #!/bin/bash
 
-TASK_PATH="/home/snflow/Smartthings/tplink-hs105"
+TASK_PATH="/home/snflow/Smartthings/tplink-gateway"
 
 PROGRAM="node"
-SCRIPT="hs100.js"
+SCRIPT="hs105.js"
 
 result=`ps aux | grep "${PROGRAM} ${SCRIPT}" | grep -v "grep" | wc -l`
 if [ $result -ge 1 ]
