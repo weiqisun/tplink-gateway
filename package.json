@@ -1,11 +1,29 @@
 {
-  "name": "hs-100-api-bridge",
+  "name": "tplink-gateway",
   "version": "1.0.0",
-  "author": "none",
-  "scripts": {},
-  "dependencies": {
-    "hs100-api": "*",
-    "log4js": "^2.4.1"
+  "description": "Tp-Link smart plug gateway",
+  "main": "hs105.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private": true
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weiqisun/tplink-gateway.git"
+  },
+  "keywords": [
+    "Tp_Link",
+    "smart",
+    "plug",
+    "gateway"
+  ],
+  "author": "Weiqi Sun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weiqisun/tplink-gateway/issues"
+  },
+  "homepage": "https://github.com/weiqisun/tplink-gateway#readme",
+  "dependencies": {
+    "hs100-api": "^0.19.1",
+    "log4js": "^6.1.0"
+  }
 }
