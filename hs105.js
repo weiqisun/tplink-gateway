@@ -1,7 +1,7 @@
 var sock = require('net');
 var http = require('http');
 var url = require('url');
-var hs100api = require('hs100-api');
+var hs100api = require('tplink-smarthome-api');
 
 const log4js = require('log4js');
 

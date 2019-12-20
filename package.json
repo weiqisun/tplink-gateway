@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/weiqisun/tplink-gateway#readme",
   "dependencies": {
-    "hs100-api": "^0.19.1",
-    "log4js": "^6.1.0"
+    "log4js": "^6.1.0",
+    "tplink-smarthome-api": "^1.3.0"
   }
 }
