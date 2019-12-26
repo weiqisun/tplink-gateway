@@ -15,12 +15,12 @@
 
 # Carry out specific functions when asked to by the system
 d_status() {
-    result=`ps aux | grep "node hs100.js" | grep -v "grep" | wc -l`
+    result=`ps aux | grep "node hs105.js" | grep -v "grep" | wc -l`
     if [ $result -ge 1 ]; then
-        echo "hdmicecd is running"
+        echo "tplink-gatewayd is running"
         exit 0
     else
-        echo "hdmicecd is not running"
+        echo "tplink-gatewayd is not running"
         exit 3
     fi
 }
@@ -31,7 +31,7 @@ case "$1" in
     ;;
   stop)
     killall tplink-gatewayd
-    pkill -f hs100.js
+    pkill -f hs105.js
     ;;
   restart)
     $0 stop
